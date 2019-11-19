@@ -1,0 +1,17 @@
+.border-bottom-lightgrey{
+	border-bottom: 1px solid lightgrey;
+}
+
+.border-radius-4px {
+	border-radius: 4px;
+}
+
+.border-white {
+border: 10px solid white;
+}
+.border-grey {
+	border: 1px solid lightgrey;
+}
+.border-radius-10px {
+border-radius: 10px;
+}

@@ -1,0 +1,119 @@
+@import url("utilities/height.css");
+@import url("utilities/background.css");
+@import url("utilities/margin.css");
+@import url("utilities/border.css");
+@import url("utilities/width.css");
+@import url("utilities/color.css");
+@import url("utilities/font.css");
+@import url("utilities/padding.css");
+@import url("utilities/box-shadow.css");
+@import url("pages/media.css");
+
+.page-accueil {
+height: 100vh;
+background-image: url(../images/background-1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.box-nouveaute-1 img {
+	    box-shadow: 0 0 5px 3px rgba(0,0,0,.05);
+}
+
+.box-nouveaute-2 img {
+	    box-shadow: 0 0 5px 3px rgba(0,0,0,.05);
+}
+
+#menuburger {
+	display:none;
+}
+
+
+.bar1, .bar2, .bar3{
+	width: 25px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .bar1{
+	-webkit-transform: rotate(-45deg) translate(-8px, 6px);
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+.change .bar2 {background-color:white;}
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-9px, -8px);
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+#menuburger{
+	display:none;
+	width:100%;
+}
+.ensemble{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px;
+}
+#menuburger>nav>ul{
+	position: absolute;
+	width:100%;
+	background-color:#275d89;
+	left:-100%;
+	transition: left 0.4s;
+	-webkit-transition: left 0.4s;
+	margin:0;
+	z-index:2;
+}
+#menuburger nav ul{
+	display:flex;
+	flex-direction:column;
+	padding:0;
+	font-size:20px;
+	font-family: 'Montserrat', sans-serif;
+	min-height:50%;
+}
+#menuburger.change ul{
+	left:0;
+}
+#menuburger a{
+	color:#FFFFFF;
+}
+.fa-user{
+	color:white;
+	font-size: 1.9em;
+}
+.bloc-header-right{
+	display: flex;
+}
+.fa-shopping-basket{
+	color:white;
+	font-size: 1.9em;
+	margin-left: 15px;
+}
+
+
+@media all and (max-width: 800px) {
+.navbar-double {
+	display :none;
+}
+#menuburger {
+	display:block;
+}
+}
+
+@media (max-width: 1600px) {
+.box-nouveaute-1 {
+	flex-direction: column;
+}
+.box-nouveaute-2{
+	flex-direction: column;
+}
+}
+
+.footer-fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
